@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('/static/image/mangga.jpg') no-repeat center center;
+            background-color: #c5dec1;
+            background-size: cover;
+            background-blend-mode: multiply;
+            color: #2e3d34;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .blur-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 110%;
+            height: 100%;
+            background: linear-gradient(rgba(197, 222, 193, 0.5), rgba(166, 166, 97, 0.3)), url('/static/image/mangga.jpg') no-repeat center center;
+            background-size: cover;
+            filter: blur(1px);
+            z-index: 0;
+            opacity: 0.8;
+        }
+
+        .container {
+            margin-top: 90px;
+            margin-bottom: 90px;
+            width: 95%;
+            max-width: 1200px;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #2a5d45;
+            font-size: 2.7em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #4a6455;
+            font-size: 1.2em;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            background-color: #f0f8ee;
+            border: 1px solid #c5dec1;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            width: 120px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #2a5d45;
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        .team-member p {
+            color: #4a6455;
+            font-size: 0.8em;
+        }
+
+        .contact-us {
+            margin-top: 50px;
+            background-color: #eaf4e6;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-us h2 {
+            color: #2a5d45;
+            font-size: 2.2em;
+        }
+
+        .contact-us p {
+            color: #4a6455;
+            font-size: 1.1em;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #c5dec1;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 12px 25px;
+            background-color: #2a5d45;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #3c7a5c;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#">Prediksi Tumbuhan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/info">Prediksi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/team">Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="blur-image"></div>
+    <div class="container">
+        <h1>Tentang Kami</h1>
+        <p>
+            Deep Learning adalah salah satu cabang dari kecerdasan buatan yang menggunakan jaringan saraf tiruan
+            untuk meniru cara kerja otak manusia dalam memproses data dan membuat keputusan.
+        </p>
+        <h2 style="margin-top: 100px;">Tim Kami</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="/static/profil/rotua.jpg" alt="Rotua Sitorus">
+                <h3>Rotua Sitorus</h3>
+            </div>
+            <div class="team-member">
+                <img src="/static/profil/grace.jpg" alt="Grace Hutagaol">
+                <h3>Grace Hutagaol</h3>
+            </div>
+            <div class="team-member">
+                <img src="/static/profil/mila.jpg" alt="Mila Limbong">
+                <h3>Mila Limbong</h3>
+            </div>
+            <div class="team-member">
+                <img src="/static/profil/david bate'e.png" alt="David Bate'e">
+                <h3>David Bate'e</h3>
+            </div>
+            <div class="team-member">
+                <img src="/static/profil/david hui.jpg" alt="David Christian">
+                <h3>David Christian</h3>
+            </div>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <p>Have any questions or feedback? Feel free to reach out to us!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

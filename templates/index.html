@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Bootstrap CSS -->
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="/static/style.css">
+            <title>About Us</title>
+    <title>Informasi Mangga</title>
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 90px;
+        }
+
+        /* Gambar utama */
+        .top-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-image {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Section untuk gambar dan teks buah mangga */
+        .image-buah {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 30px;
+        }
+
+        .gambar-buah {
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gambar-buah:hover {
+            transform: scale(1.1);
+        }
+
+        .text-buah {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            max-width: 600px;
+        }
+
+        /* Styling untuk teks di bagian bawah */
+        .footer-text {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 18px;
+            color: #777;
+        }
+
+        /* Section untuk informasi ANN */
+        .info-ann {
+            margin-top: 40px;
+            background-color: #e0f7fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .info-ann h2 {
+            font-size: 28px;
+            color: #00796b;
+        }
+
+        .info-ann p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#">Prediksi Tumbuhan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/info">Prediksi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/team">Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="image-container">
+            <img src="static\image\mango tree and mango garden,mango tree_ Generative AI.jpg" alt="Pohon Mangga" class="top-image">
+            <div class="text-image">Pohon Mangga Penerapan ANN</div>
+        </div>
+    </div>
+
+    <div class="image-buah">
+        <img src="static\image\Manga_detail_1.jpg" alt="Buah Mangga" class="gambar-buah">
+        <p class="text-buah">
+            Buah Mangga adalah salah satu buah tropis yang sangat populer, dengan rasa manis dan segar. Mangga mengandung banyak vitamin C yang baik untuk meningkatkan sistem kekebalan tubuh. Selain itu, buah ini juga kaya akan serat yang bermanfaat bagi pencernaan. Mangga sering dikonsumsi langsung, dijadikan jus, atau digunakan dalam berbagai hidangan.
+        </p>
+    </div>
+
+    <div class="image-buah">
+        <img src="static\image\Daun_mangga.jpg" alt="Daun Mangga" class="gambar-buah">
+        <p class="text-buah">
+            Daun Mangga memiliki berbagai manfaat untuk kesehatan. Daun ini kaya akan antioksidan dan senyawa antiinflamasi yang dapat membantu menjaga kesehatan tubuh. Selain itu, ekstrak daun mangga digunakan dalam pengobatan tradisional untuk mengatasi beberapa penyakit, seperti diabetes dan gangguan pencernaan.
+        </p>
+    </div>
+
+    <div class="image-buah">
+        <img src="static\image\Mango tree.jpg" alt="Batang Mangga" class="gambar-buah">
+        <p class="text-buah">
+            Batang Mangga adalah bagian dari pohon mangga yang memiliki nilai ekonomis dan juga manfaat kesehatan. Kayu batang mangga sering digunakan dalam pembuatan furnitur dan kerajinan. Selain itu, dalam pengobatan tradisional, ekstrak batang mangga digunakan untuk mengatasi beberapa penyakit seperti diare, demam, dan infeksi.
+        </p>
+    </div>
+
+    <div class="footer-text">
+        <p>Informasi ini bertujuan untuk memberikan wawasan lebih dalam tentang manfaat dan keindahan pohon mangga, mulai dari buah hingga daunnya.</p>
+    </div>
+
+    <!-- Info tentang penerapan ANN -->
+    <div class="info-ann">
+        <h2>Penerapan Artificial Neural Network (ANN) dalam Prediksi Buah, Batang, dan Daun Mangga</h2>
+        <p>
+            Dalam dunia teknologi, penerapan Artificial Neural Network (ANN) memiliki potensi yang luar biasa untuk membantu dalam berbagai bidang, termasuk prediksi dan klasifikasi objek. Pada proyek ini, ANN digunakan untuk melakukan prediksi terhadap bagian-bagian pohon mangga seperti buah, batang, dan daun berdasarkan citra gambar.
+        </p>
+        <p>
+            Dengan menggunakan teknik ANN, data citra dari berbagai bagian pohon mangga dapat diproses dan diklasifikasikan secara otomatis. Proses ini dapat digunakan dalam pengembangan aplikasi yang membantu dalam identifikasi tanaman atau untuk analisis pertanian berbasis gambar.
+        </p>
+        <p>
+            Penerapan ANN pada prediksi bagian pohon mangga membuka peluang untuk pengembangan lebih lanjut dalam bidang pertanian dan penelitian tanaman, memberikan cara yang lebih efisien dan akurat dalam menganalisis tanaman secara otomatis.
+        </p>
+    </div>
+
+</body>
+
+</html>

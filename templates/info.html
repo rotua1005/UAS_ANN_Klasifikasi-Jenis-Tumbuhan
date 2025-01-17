@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Classification - Mango Types</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/style/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Plant Classification</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/info">Prediksi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/team">Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container text-center mt-5">
+        <h1 class="display-4">Mango Plant Classification</h1>
+        <p class="lead">Upload or capture an image of a mango plant part (Fruit, Leaf, Stem) to classify it!</p>
+    </div>
+
+    <!-- Camera Section for Video Prediction -->
+    <div class="container text-center mt-5">
+        <h3>Capture Image from Camera for Prediction</h3>
+        <video id="video" width="300" height="200" autoplay></video>
+        <br>
+        <button id="capture" class="btn btn-success mt-2">Capture</button>
+        <br><br>
+        <canvas id="canvas" style="display: none;"></canvas>
+        <div id="capturedImage" style="display: none;">
+            <h3>Captured Image:</h3>
+            <img id="capturedImg" src="" alt="Captured Image" class="img-fluid" style="max-width: 300px;" />
+        </div>
+        <br>
+        <button id="predictBtn" class="btn btn-primary mt-2" style="display: none;" onclick="predictFromCamera()">Predict</button>
+    </div>
+
+    <!-- File Upload Section for Image Prediction -->
+    <div class="container text-center mt-5">
+        <h3>Upload Image for Prediction</h3>
+        <form id="uploadForm" onsubmit="uploadImage(event)">
+            <input type="file" id="file" name="file" accept="image/*" required />
+            <button type="submit" class="btn btn-primary mt-2">Upload and Predict</button>
+        </form>
+        <br><br>
+        <div id="imageContainer" style="display: none;">
+            <h3>Uploaded Image:</h3>
+            <img id="uploadedImage" src="" alt="Uploaded Image" class="img-fluid" style="max-width: 300px;" />
+        </div>
+        <div id="result" style="display: none;"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2024 Plant Classification - Mango Types</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your custom script -->
+    <script src="static/script/script.js"></script>
+</body>
+
+</html>
